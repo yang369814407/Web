@@ -1,14 +1,67 @@
 
 
-- [Get全栈技能点 Vue2.0/Node.js/MongoDB 打造商城系统](https://coding.imooc.com/class/chapter/113.html)
 
 ## MVVM模式
+
+![](http://img.smyhvae.com/20180420_2150.png)
 
 - Model：负责数据存储
 
 - View：负责页面展示
 
 - View Model：负责业务逻辑处理（比如Ajax请求等），对数据进行加工后交给视图展示
+
+
+## 关于框架
+
+
+### 为什么要学习流行框架
+
+**1、企业为了提高开发效率**：在企业中，时间就是效率，效率就是金钱；企业中，使用框架，能够提高开发的效率。
+
+
+**提高开发效率的发展历程**：
+
+原生JS -> Jquery之类的类库 -> 前端模板引擎 -> Angular.js / Vue.js（能够帮助我们减少不必要的DOM操作；提高渲染效率；双向数据绑定的概念【通过框架提供的指令，我们前端程序员只需要关心数据的业务逻辑，不再关心DOM是如何渲染的了】）
+
+
+2、在Vue中，一个核心的概念，就是让用户不再操作DOM元素，解放了用户的双手，让程序员可以更多的时间去关注业务逻辑。
+
+
+
+**3、增强自己就业时候的竞争力**： 
+
+- 人无我有，人有我优。
+
+- 你平时不忙的时候，都在干嘛？
+
+
+
+### 框架和库的区别
+
+
+**框架**：
+
+框架是一套完整的解决方案。
+
+对项目的**侵入性**较大，项目如果需要更换框架，则需要重新架构整个项目。但是优点也很明显：功能完善、提供了一整套的解决方案。
+
+
+
+
+**库（插件）**
+
+只是提供某一个小功能。
+
+对项目的侵入性较小，如果某个库无法完成某些需求，可以很容易切换到其它库实现需求。
+
+举例：
+
+- 从Jquery 切换到 Zepto
+
+- 从 EJS 切换到 art-template
+
+
 
 ## 前端的各种框架
 
@@ -21,6 +74,12 @@ AngularJS 提供更多的是一套解决方案，更像是一个生态。
 ### Vue 和 React 的对比
 
 ![](http://img.smyhvae.com/20180302_1623.png)
+
+
+Vue.js 是目前最火的一个前端框架，React是最流行的一个前端框架。
+
+Vue.js 是一套构建用户界面的框架，**只关注视图层**。
+
 
 
 ### Vue 和 React 的相同点
@@ -76,9 +135,9 @@ Vue框架中，没有控制器。
 
 - Vue2.x 在线文档：<https://cn.vuejs.org/v2/guide/>
 
-- Vue1下载地址：http://v1-cn.vuejs.org/js/vue.js
+- Vue1下载地址：<http://v1-cn.vuejs.org/js/vue.js>
 
-- Vue2下载地址：https://unpkg.com/vue@2.2.1/dist/vue.js
+- Vue2下载地址：<https://cdn.jsdelivr.net/npm/vue/>
 
 
 
@@ -303,7 +362,7 @@ $ vue init webpack VueDemo02
 ```
 cd /Users/smyhvae/Dropbox/workspace/Mac/VueDemo02
 
-cnpm install
+npm install
 ```
 
 备注：我们在 GitHub上下载的任何Vue有关的项目并没有包含 `node_modules`，第一步都是要首先执行 cnpm install，把 `node_modules`里的包下载下来。我们发给同事的工程文件，建议也不要包含 `node_modules`。
@@ -313,7 +372,7 @@ cnpm install
 （3）让项目跑起来：
 
 ```
-cnpm run dev
+npm run dev
 ```
 
 这个空的项目就可以在浏览器上跑起来。
@@ -326,7 +385,7 @@ cnpm run dev
 
 ## vue 项目结构分析
 
-![](http://img.smyhvae.com/20180303_1010.png)
+![](http://img.smyhvae.com/20180501_2100.png)
 
 - buid：打包配置的文件夹
 
@@ -380,6 +439,9 @@ cnpm run dev
 
 
 
+本文参考链接：
+
+- [Get全栈技能点 Vue2.0/Node.js/MongoDB 打造商城系统](https://coding.imooc.com/class/chapter/113.html)
 
 
 
